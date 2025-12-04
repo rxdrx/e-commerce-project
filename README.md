@@ -580,8 +580,3 @@ MIT License - see LICENSE file for details
 
 **rxdrx**
 - GitHub: [@rxdrx](https://github.com/rxdrx)
-
----
-
-**Built with ❤️ for portfolio demonstration**
-Full Stack E-commerce Dashboard.Stack: React, Node.js, Python, MySQL. Includes custom ETL scripts and interactive data visualization
