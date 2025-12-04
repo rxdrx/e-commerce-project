@@ -57,13 +57,15 @@ app.use((err: Error, _req: Request, res: Response) => {
   });
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.info('='.repeat(50));
-  console.info(`🚀 Server running on port ${PORT}`);
-  console.info(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.info(`🔗 API URL: http://localhost:${PORT}`);
-  console.info('='.repeat(50));
-});
+// Start server (only if not being imported by tests)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.info('='.repeat(50));
+    console.info(`🚀 Server running on port ${PORT}`);
+    console.info(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
+    console.info(`🔗 API URL: http://localhost:${PORT}`);
+    console.info('='.repeat(50));
+  });
+}
 
 export default app;

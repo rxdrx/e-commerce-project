@@ -67,6 +67,13 @@ export const getOrders = async (req: Request, res: Response): Promise<void> => {
 export const getOrderById = async (req: Request, res: Response): Promise<void> => {
   try {
     const { id } = req.params;
+    
+    // Validate ID is a number
+    if (isNaN(Number(id))) {
+      res.status(400).json({ error: 'Invalid order ID' });
+      return;
+    }
+    
     const connection = await pool.getConnection();
 
     const orderQuery = `
