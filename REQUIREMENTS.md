@@ -1,7 +1,3 @@
-Actúa como un Arquitecto de Software Senior. Necesito que generes el código y la estructura para un proyecto de portafolio llamado "AnalyticsHub: E-commerce Business Intelligence Dashboard".
-
-El objetivo es demostrar habilidades Full Stack, manejo complejo de SQL y procesamiento de datos.
-
 ## 1. Stack Tecnológico
 - **Frontend:** React + TypeScript + Tailwind CSS. (Usa 'Recharts' o 'Chart.js' para los gráficos).
 - **Backend API:** Node.js + Express + TypeScript.
